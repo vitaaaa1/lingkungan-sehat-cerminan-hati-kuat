@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Lingkungan Sehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HALAMAN LOGIN -->
+<div class="container" id="loginPage">
+    <div class="ornament">🌳 🌲 🌿</div>
+
+    <h1 class="title green">
+        LINGKUNGAN SEHAT<br>
+        CERMINAN HATI
+    </h1>
+
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <div class="ornament">🌿 🌲 🌳</div>
+</div>
+
+<!-- HALAMAN UTAMA -->
+<div class="container hidden" id="homePage">
+    <h1 class="title">Kondisi Lingkungan</h1>
+
+    <!-- GAMBAR LINGKUNGAN KOTOR -->
+    <h3 class="subtitle">Lingkungan Kotor</h3>
+    <img src="https://via.placeholder.com/420x240?text=Lingkungan+Kotor"
+         alt="Lingkungan Kotor"
+         class="environment-image">
+
+    <!-- DESKRIPSI EDUKASI SOSIAL -->
+    <p class="description">
+        Lingkungan yang kotor dapat memberikan dampak negatif bagi kesehatan
+        manusia dan keseimbangan alam. Sampah yang menumpuk dapat menyebabkan
+        pencemaran, banjir, serta menjadi sumber berbagai penyakit. Melalui
+        <b>klasifikasi lingkungan berbasis Artificial Intelligence (AI)</b>,
+        kondisi lingkungan kotor dapat dikenali lebih cepat sehingga masyarakat
+        terdorong untuk menggunakan alat kebersihan dan menjaga kebersihan
+        lingkungan secara berkelanjutan.
+    </p>
+
+    <!-- GAMBAR LINGKUNGAN SEHAT -->
+    <h3 class="subtitle">Lingkungan Sehat</h3>
+    <img src="https://via.placeholder.com/420x240?text=Lingkungan+Sehat"
+         alt="Lingkungan Sehat"
+         class="environment-image">
+
+    <p class="description">
+        Lingkungan yang bersih dan sehat menciptakan kehidupan yang nyaman,
+        mengurangi risiko penyakit, serta menjaga kelestarian alam. Edukasi
+        sosial mengajak masyarakat untuk berperan aktif menjaga kebersihan
+        dengan memanfaatkan alat kebersihan yang tepat demi masa depan
+        lingkungan yang lebih baik.
+    </p>
+
+    <button class="logout" onclick="logout()">Logout</button>
+</div>
+
+<!-- HALAMAN LOGOUT -->
+<div class="container hidden" id="logoutPage">
+    <h1 class="title">Anda Telah Logout</h1>
+    <p class="description">
+        Terima kasih telah mendukung gerakan peduli lingkungan 🌱
+    </p>
+    <button onclick="backToLogin()">Login Kembali</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
